@@ -1,3 +1,100 @@
-Title: Dawit Engda
-show_download: True
-theme: jekyll-theme-minimal
+# Site Settings
+title: Your Name - Full Stack Developer
+email: your.email@example.com
+description: >-
+  Portfolio showcasing full-stack development projects in HTML, CSS, JavaScript, 
+  Python, Django, Flask, Selenium, Web Scraping, Flutter, and Automation
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://yourusername.github.io" # the base hostname & protocol for your site
+github_username: yourusername
+twitter_username: yourtwitterhandle
+linkedin_username: yourlinkedinprofile
+
+# Build Settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Custom variables
+skills:
+  - name: Frontend
+    items: ["HTML5", "CSS3", "JavaScript", "Flutter"]
+  - name: Backend
+    items: ["Python", "Django", "Flask"]
+  - name: Automation
+    items: ["Selenium", "Web Scraping", "Automation"]
+  - name: Other
+    items: ["Git", "GitHub", "Responsive Design"]
+
+projects:
+  - name: "E-commerce Site"
+    description: "Full-stack e-commerce platform with Django backend"
+    technologies: ["Django", "JavaScript", "CSS"]
+    url: "https://github.com/yourusername/ecommerce-project"
+    image: "/assets/images/ecommerce.png"
+    
+  - name: "Web Scraper"
+    description: "Python scraper with Selenium and BeautifulSoup"
+    technologies: ["Python", "Selenium", "BeautifulSoup"]
+    url: "https://github.com/yourusername/web-scraper"
+    image: "/assets/images/scraper.png"
+    
+  - name: "Flutter App"
+    description: "Mobile application built with Flutter"
+    technologies: ["Flutter", "Dart"]
+    url: "https://github.com/yourusername/flutter-app"
+    image: "/assets/images/flutter-app.png"
+
+# Navigation
+nav:
+  - name: "Home"
+    url: "/"
+  - name: "Projects"
+    url: "/projects/"
+  - name: "Skills"
+    url: "/skills/"
+  - name: "Blog"
+    url: "/blog/"
+  - name: "Contact"
+    url: "/contact/"
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Your Name"
+      categories: "development"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+      show_in_portfolio: true
+
+# Markdown Processing
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .idea
+  - .vscode
+  - LICENSE
+  - README.md
+  - package.json
+  - package-lock.json
